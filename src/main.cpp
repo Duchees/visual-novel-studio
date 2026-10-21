@@ -1,8 +1,17 @@
 // SPDX-License-Identifier: MPL-2.0
-// Copyright (c) 2026 VNS (Visual Novel Studio) Duchees.
+// Copyright (c) 2026 VNS (aka Visual Novel Studio) Duchees.
 
-// main.cpp - application entry point for Visual Novel Studio.
+#include <SDL3/SDL.h>
+#include <SDL3/SDL_main.h>
 
-int main() {
-    return 0;
+int main(int argc, char* argv[]) {
+  (void)argc;
+  (void)argv;
+
+  if (!SDL_Init(SDL_INIT_VIDEO)) {
+    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Failed to init SDL3 video: %s", SDL_GetError());
+    return 1;
+  }
+
+  return 0;
 }
