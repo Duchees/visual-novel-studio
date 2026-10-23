@@ -9,7 +9,7 @@ int main(int argc, char* argv[]) {
   (void)argv;
 
   if (!SDL_Init(SDL_INIT_VIDEO)) {
-    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Failed to init SDL3 video: %s", SDL_GetError());
+    SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "%s", SDL_GetError());
     return 1;
   }
 
