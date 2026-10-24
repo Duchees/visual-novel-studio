@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MPL-2.0
 // Copyright (c) 2026 VNS (aka Visual Novel Studio) Duchees.
 
-#include <window.hpp>
+#include "window.hpp"
 
 #include <SDL3/SDL_init.h>
 
