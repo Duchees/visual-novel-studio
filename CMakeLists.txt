@@ -14,7 +14,7 @@ find_package(SDL3 REQUIRED)
 
 add_executable(${PROJECT_NAME})
 
-target_sources(${PROJECT_NAME} PRIVATE_HEADER
+target_sources(${PROJECT_NAME} PRIVATE
         src/main.cpp 
         src/platform/window.cpp
 )
